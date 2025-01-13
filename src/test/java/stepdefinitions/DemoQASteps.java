@@ -7,8 +7,12 @@ import static com.codeborne.selenide.Selenide.open;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import java.util.Map;
+import io.qameta.allure.*;
 
-public class DemoQASteps {
+@Epic("DemoQA Tests")
+@Feature("Web Elements Tests")
+
+ public class DemoQASteps {
     private ButtonsPage buttonsPage = new ButtonsPage();
     private WebTablesPage webTablesPage = new WebTablesPage();
     private Map<String, String> recordData;
